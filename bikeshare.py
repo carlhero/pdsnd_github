@@ -1,3 +1,4 @@
+""" Udacity project on bikeshare users in numerous cities."""
 import time
 import pandas as pd
 import numpy as np
