@@ -1,15 +1,18 @@
 ### Date created
-Include the date you created this project and README file.
+This project was created on May 1, 2020 and README file updated.
 
 ### Project Title
-Replace the Project Title
+The Project Title is pdsnd_github
 
 ### Description
-Describe what your project is about and what it does
+This project test the skills learned in the Udacity versioning course.
 
 ### Files used
-Include the files used
+Files include in the project are:
+bikeshare.py
+README.md
+.gitignore
+
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
-
+This repository was forked from udacity/pdsnd_github
