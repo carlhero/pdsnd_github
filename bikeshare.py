@@ -66,8 +66,8 @@ def load_data(city, month, day):
     df['Start Time'] = pd.to_datetime(df['Start Time'])
 
     # extract month and day of week from Start Time to create new columns
-    df['month'] = df['Start Time'].dt.month
-    df['day_of_week'] = df['Start Time'].dt.weekday_name
+    df['month'] = df['Start Time'].dt.month_name()
+    df['day_of_week'] = df['Start Time'].dt.day_name()
 
     # filter by month if applicable
     if month != 'all':
@@ -97,10 +97,10 @@ def time_stats(df):
     # print("The most common month to travel is {}.\n".format(months[int(month_num)]).title())
     # Note: Previous 3 lines work when entering a month name, but fail when using 'all'
 
-    print("The most common month to travel is {}.\n".format(df['Start Time'].dt.month.mode()))
+    print("The most common month to travel is {}.\n".format(df['Start Time'].dt.month_name().mode()))
 
     # TO DO: display the most common day of week
-    print("The most common day of the week is {}.\n".format(df['Start Time'].dt.weekday_name.mode()[0]))
+    print("The most common day of the week is {}.\n".format(df['Start Time'].dt.day_name().mode()[0]))
 
     # TO DO: display the most common start hour
     print("The most common start hour is {}.\n".format(df['Start Time'].dt.hour.mode()[0]))
