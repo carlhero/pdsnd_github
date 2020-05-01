@@ -2,7 +2,7 @@
 This project was created on May 1, 2020 and README file updated.
 
 ### Project Title
-The Project Title is pdsnd_github
+The name of the project is pdsnd_github.
 
 ### Description
 This project test the skills learned in the Udacity versioning course.
